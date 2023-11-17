@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/home.css';
 import TheStarryNightBlack from '../images/TheStarryNightBlack.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,7 +19,10 @@ function Home() {
     return (
         <>
             <div className="container-fluid p-0 " style={backgroundStyle}>
-                <h1  className="text-white">hello</h1>
+                <div className="titletextdiv">
+                    <p className="text-white titletext">hello</p>
+                </div>
+            
             </div>
         </>
     );

@@ -1,0 +1,24 @@
+@keyframes cursor {
+    50%{ border-color: transparent;}
+}
+@keyframes typing {
+    from { width:0; }
+}
+
+.titletextdiv{
+    display: inline-block;
+}
+.titletext{
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width:0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    animation: 
+        typing 5s steps (15),
+        cursor 0.4s step-end infinite alternate;
+}
+
