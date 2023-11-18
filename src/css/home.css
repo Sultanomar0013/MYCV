@@ -1,24 +1,122 @@
-@keyframes cursor {
-    50%{ border-color: transparent;}
+/* Home Section*/
+.textdiv{
+    width:100%;
+    height:100vh;
+    background: #2b323c;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    
 }
-@keyframes typing {
-    from { width:0; }
+.content h1{
+    margin-left: 15%;
+}
+.text-3d-shadow {
+    text-shadow: 15px 15px 8px rgb(0, 0, 0), 15px 15px 8px rgb(0, 0, 0), 15px 15px 8px rgb(0, 0, 0);
+    /* Additional styles can be added here */
 }
 
-.titletextdiv{
-    display: inline-block;
+.content {
+    height: 80%;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
 }
-.titletext{
-    font-size: 5em;
-    letter-spacing: 10px;
-    font-family: monospace;
-    border-right: 5px solid;
-    width:0;
-    white-space: nowrap;
-    overflow: hidden;
-    color: white;
-    animation: 
-        typing 5s steps (15),
-        cursor 0.4s step-end infinite alternate;
+
+.imgdiv {
+    height: 80%;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    height: 50%;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 150px;
+    box-shadow: 15px 15px 30px rgb(0, 0, 0), 15px 15px 30px rgb(0, 0, 0), 15px 15px 30px rgb(0, 0, 0);
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+}
+
+/*About me section*/
+.aboutmeSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.tiltcard {
+    display: flex;
+    align-items: center;
+    color: rgb(28, 27, 27);
+    background-color: rgb(255, 255, 255);
+    
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    margin: 0 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid rgba(4, 4, 4, 0.18);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.tilttextdiv {
+    transform: translateZ(100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    -webkit-transform: translateZ(100px);
+    -moz-transform: translateZ(100px);
+    -ms-transform: translateZ(100px);
+    -o-transform: translateZ(100px);
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 769px) {
+    .textdiv {
+        flex-direction: column-reverse; /* Reset flex-direction for larger screens */
+        height: 80vh; /* Adjusted height for larger screens */
+    
+    }
+
+    .content h1{
+        font-size: medium;
+        margin-left: 0%;
+    }
+    .imgdiv {
+        width: 50%; /* Reset width for larger screens */
+        height: 50%; /* Reset height for larger screens */
+        
+    }
+    .profile-image{
+        border: 1px solid black;
+    border-radius: 150px;
+    box-shadow: 5px 10px 30px rgb(0, 0, 0), 5px 10px 30px rgb(0, 0, 0), 5px 10px 30px rgb(0, 0, 0);
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+    }
 }
 
