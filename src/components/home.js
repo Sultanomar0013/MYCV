@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../css/home.css";
 import $, { speed } from "jquery";
 import "tilt.js";
 import { motion, useAnimation } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Profile from "../images/profile.png";
+import Demo from "../images/TheStarryNightBlack.jpeg"
 import Typed from "typed.js";
 //import ScrollReveal from "../Animation/scrollreveal";
 import Reveal from "../Animation/reveal";
@@ -17,8 +18,21 @@ import { useInView } from "react-intersection-observer";
 import Scroll from "../Animation/scroll";
 
 
-
 function Home() {
+
+    const [selectedDiv, setSelectedDiv] = useState(null);
+
+    const handleClick = (divName) => {
+        setSelectedDiv(divName === selectedDiv ? null : divName);
+    };
+
+    const renderDetails = (divName, details) => {
+        if (selectedDiv === divName) {
+            return <div>{details}</div>;
+        }
+        return null;
+    };
+
     useEffect(() => {
         $(".tiltcard").tilt({
             max: 25,
@@ -87,26 +101,47 @@ function Home() {
 
             <section>
                 <div className=" education">
-                <Scroll>
-                <div className="edutitle">
-                        <h1>Education Qualification</h1>
-                    </div>
-                </Scroll>
-                    <div className="edumaindiv">
-                        <div className="edusubdiv">
-                            <h1>SSC</h1>
+                    <Scroll>
+                        <div className="edutitle">
+                            <h1>Education Qualification</h1>
                         </div>
-                        <div className="edusubdiv">
-                            <h1>HSC</h1>
+                    </Scroll>
+                    <div className="edumaindiv">
+                        <div className="edusubdiv" onClick={() => handleClick('SSC')}>
+                            <h4>SSC</h4>
+                        </div>
+                        <div className="edusubdiv" onClick={() => handleClick('HSC')}>
+                            <h4>HSC</h4>
                         </div>
 
-                        <div className="edusubdiv">
-                            <h1>BSC</h1>
+                        <div className="edusubdiv" onClick={() => handleClick('BSC')}>
+                            <h4>BSC</h4>
                         </div>
-                        <div className="edusubdiv">
-                            <h1>MSC</h1>
+                        <div className="edusubdiv" onClick={() => handleClick('MSC')}>
+                            <h4>MSC</h4>
                         </div>
                     </div>
+                    <div className="eduhiddendiv">
+                        {renderDetails('SSC', <div className="eduhidden">
+                            <h1>HidddenSSC</h1>
+                        </div>)}
+                        {renderDetails('HSC', <div className="eduhidden">
+                            <h1>HidddenHSC</h1>
+                        </div>)}
+                        {renderDetails('BSC', <div className="eduhidden">
+                            <h1>HidddenBSC</h1>
+                        </div>)}
+                        {renderDetails('MSC', <div className="eduhidden">
+                            <div className="eduhiddenimg">
+                                <img src={Demo} ></img>
+                            </div>
+                            <div>
+                                
+                            </div>
+                            
+                        </div>)}
+                    </div>
+
                 </div>
             </section>
         </>
