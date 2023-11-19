@@ -5,7 +5,7 @@ import "tilt.js";
 import { motion, useAnimation } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Profile from "../images/profile.png";
-import Demo from "../images/TheStarryNightBlack.jpeg"
+import Demo from "../images/TheStarryNightBlack.jpeg";
 import Typed from "typed.js";
 //import ScrollReveal from "../Animation/scrollreveal";
 import Reveal from "../Animation/reveal";
@@ -17,9 +17,7 @@ import { useInView } from "react-intersection-observer";
 //import FadeOnScroll from '../Animation/fadescroll';
 import Scroll from "../Animation/scroll";
 
-
 function Home() {
-
     const [selectedDiv, setSelectedDiv] = useState(null);
 
     const handleClick = (divName) => {
@@ -107,41 +105,59 @@ function Home() {
                         </div>
                     </Scroll>
                     <div className="edumaindiv">
-                        <div className="edusubdiv" onClick={() => handleClick('SSC')}>
+                        <div className="edusubdiv" onClick={() => handleClick("SSC")}>
                             <h4>SSC</h4>
                         </div>
-                        <div className="edusubdiv" onClick={() => handleClick('HSC')}>
+                        <div className="edusubdiv" onClick={() => handleClick("HSC")}>
                             <h4>HSC</h4>
                         </div>
 
-                        <div className="edusubdiv" onClick={() => handleClick('BSC')}>
+                        <div className="edusubdiv" onClick={() => handleClick("BSC")}>
                             <h4>BSC</h4>
                         </div>
-                        <div className="edusubdiv" onClick={() => handleClick('MSC')}>
+                        <div className="edusubdiv" onClick={() => handleClick("MSC")}>
                             <h4>MSC</h4>
                         </div>
                     </div>
                     <div className="eduhiddendiv">
-                        {renderDetails('SSC', <div className="eduhidden">
-                            <h1>HidddenSSC</h1>
-                        </div>)}
-                        {renderDetails('HSC', <div className="eduhidden">
-                            <h1>HidddenHSC</h1>
-                        </div>)}
-                        {renderDetails('BSC', <div className="eduhidden">
-                            <h1>HidddenBSC</h1>
-                        </div>)}
-                        {renderDetails('MSC', <div className="eduhidden">
-                            <div className="eduhiddenimg">
-                                <img src={Demo} ></img>
+                        {renderDetails(
+                            "SSC",
+                            <div className="eduhidden">
+                                <h1>HidddenSSC</h1>
                             </div>
-                            <div>
-                                
+                        )}
+                        {renderDetails(
+                            "HSC",
+                            <div className="eduhidden">
+                                <h1>HidddenHSC</h1>
                             </div>
-                            
-                        </div>)}
+                        )}
+                        {renderDetails(
+                            "BSC",
+                            <div className="eduhidden">
+                                <h1>HidddenBSC</h1>
+                            </div>
+                        )}
+                        {renderDetails(
+                            "MSC",
+                            <div className="card" style={{width: '50rem', height:'15rem'}}>
+                                <div className="row no-gutters">
+                                    <div className="col-md-4">
+                                        <img src={Demo} className="card-img-left img-fluid d-block" alt="..." />
+                                    </div>
+                                    <div className="col-md-8">
+                                        <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">
+                                                Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
-
                 </div>
             </section>
         </>
