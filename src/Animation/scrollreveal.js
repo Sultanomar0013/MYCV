@@ -1,30 +1,30 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 
-const ScrollReveal = ({ children, width = "fit-content" }) => {
-    
-        const ref = useRef(null);
-        const isInView = useInView({ ref, triggerOnce: true });
-        const controls = useAnimation();
+const ScrollReveal = ({ children, threshold = 0.5 }) => {
+    const ref = useRef(null);
+    const controls = useAnimation();
+    const [inView, entry] = useInView({ threshold, triggerOnce: true });
 
     useEffect(() => {
-        console.log("isInView:", isInView);
-        if(isInView){
+        if (inView) {
             controls.start({ opacity: 1, y: 0 });
+        }else {
+            controls.start({ opacity: 0, y: 100 });
         }
-    }, [isInView, controls]);
+    }, [inView, controls]);
 
     return (
-        <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
+        <div ref={ref} style={{ position: "relative", overflow: "hidden" }}>
             <motion.div
                 variants={{
-                hidden:{ opacity:0, y:75},
-                visible:{opacity:1,y:0 }
-            }}
+                    hidden: { opacity: 0, y: 100 },
+                    visible: { opacity: 1, y: 0 },
+                }}
                 initial="hidden"
                 animate={controls}
-                transition={{ duration: 0.5, delay:0.25 }}
+                transition={{ duration: 0.5 }}
             >
                 {children}
             </motion.div>
@@ -33,4 +33,5 @@ const ScrollReveal = ({ children, width = "fit-content" }) => {
 };
 
 export default ScrollReveal;
+
 

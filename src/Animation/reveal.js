@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { motion, useAnimation, useIsPresent } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 const Reveal = ({ children, width = "fit-content" }) => {
     const controls = useAnimation();
