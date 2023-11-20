@@ -1,33 +1,36 @@
+import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
 
-const Scroll = ({ children }) => {
-    const scrollVariant = {
-        hidden: { opacity: -2, y: 100, },
-        visible: { opacity: 1, y: 0 },
+const Popup = ({ children }) => {
+    const popupVariant = {
+        hidden: { opacity: 0, scale: 0 },
+        visible: { opacity: 1, scale: 1 },
     };
     const control = useAnimation();
     const [ref, inView] = useInView();
-    useEffect(() => {
+
+    React.useEffect(() => {
         if (inView) {
             control.start("visible");
         } else {
             control.start("hidden");
         }
     }, [control, inView]);
+
     return (
         <motion.div
-            className="scroll-container"
+            className="popup-container"
             ref={ref}
-            variants={scrollVariant}
+            variants={popupVariant}
             initial="hidden"
             animate={control}
             transition={{ duration: 0.5 }}
-            style={{ width:'100%', display:'flex', justifyContent:'center'}}
+            style={{ height:'100%', width:'100%'}}
         >
-            { children }
+            {children}
         </motion.div>
     );
-}
-export default Scroll;
+};
+
+export default Popup;

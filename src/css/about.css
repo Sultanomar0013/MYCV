@@ -1,0 +1,63 @@
+/*About me section*/
+.aboutmeSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.tiltcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+    border: 3px solid rgba(0, 0, 0, 0.18);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.aboutme {
+    transform: translateZ(40px);
+    -webkit-transform: translateZ(40px);
+    -moz-transform: translateZ(40px);
+    -ms-transform: translateZ(40px);
+    -o-transform: translateZ(40px);
+}
+
+.aboutmepara {
+    width: 50%;
+    transform: translateZ(40px);
+    -webkit-transform: translateZ(40px);
+    -moz-transform: translateZ(40px);
+    -ms-transform: translateZ(40px);
+    -o-transform: translateZ(40px);
+}
+
+.aboutmepara p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 750px) {
+
+    /*About me section*/
+    .tiltcard {
+        width: 90%;
+        height: 80%;
+    }
+
+    .aboutme {
+        font-size: 15px;
+    }
+
+    .aboutmepara {
+        width: 70%;
+    }
+
+    .aboutmepara p {
+        font-size: 15px;
+    }
+}

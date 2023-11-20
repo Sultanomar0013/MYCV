@@ -2,10 +2,10 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-const Scroll = ({ children }) => {
-    const scrollVariant = {
-        hidden: { opacity: -2, y: 100, },
-        visible: { opacity: 1, y: 0 },
+const Right = ({ children }) => {
+    const boxVariant = {
+        hidden: { opacity: -2, x: 100 },
+        visible: { opacity: 1, x: 0 },
     };
     const control = useAnimation();
     const [ref, inView] = useInView();
@@ -18,16 +18,18 @@ const Scroll = ({ children }) => {
     }, [control, inView]);
     return (
         <motion.div
-            className="scroll-container"
+            className="box"
             ref={ref}
-            variants={scrollVariant}
+            variants={boxVariant}
             initial="hidden"
             animate={control}
             transition={{ duration: 0.5 }}
-            style={{ width:'100%', display:'flex', justifyContent:'center'}}
+            
+            
+            style={{ }}
         >
-            { children }
+            <div> { children } </div>
         </motion.div>
     );
 }
-export default Scroll;
+export default Right;

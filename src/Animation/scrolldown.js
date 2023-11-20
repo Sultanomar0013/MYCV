@@ -2,9 +2,9 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-const Scroll = ({ children }) => {
+const Scrolldown = ({ children }) => {
     const scrollVariant = {
-        hidden: { opacity: -2, y: 100, },
+        hidden: { opacity: -2, y: -100, },
         visible: { opacity: 1, y: 0 },
     };
     const control = useAnimation();
@@ -30,4 +30,4 @@ const Scroll = ({ children }) => {
         </motion.div>
     );
 }
-export default Scroll;
+export default Scrolldown;

@@ -18,26 +18,8 @@ import { useInView } from "react-intersection-observer";
 import Scroll from "../Animation/scroll";
 
 function Home() {
-    const [selectedDiv, setSelectedDiv] = useState(null);
-
-    const handleClick = (divName) => {
-        setSelectedDiv(divName === selectedDiv ? null : divName);
-    };
-
-    const renderDetails = (divName, details) => {
-        if (selectedDiv === divName) {
-            return <div style={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{details}</div>;
-        }
-        return null;
-    };
 
     useEffect(() => {
-        $(".tiltcard").tilt({
-            max: 25,
-            speed: 400,
-            glare: false,
-            "max-glare": 0.5,
-        });
 
         var typed = new Typed(".auto-type", {
             strings: [" Welcome to my portfolio!", "Have A Chill!!!"],
@@ -48,7 +30,6 @@ function Home() {
         });
         return () => {
             typed.destroy();
-            $(".tiltcard").tilt("destroy");
         };
     }, []);
 
@@ -81,125 +62,9 @@ function Home() {
                 </div>
             </section>
 
-            <section className="aboutmeSection">
-                <div className=" tiltcard" data-tilt>
-                    <div className="aboutme">
-                        <h6>About Me</h6>
-                    </div>
-                    <div className="aboutmepara">
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        </p>
-                    </div>
-                </div>
-            </section>
+        
 
-            <section>
-                <div className=" education">
-                        <div className="edutitle">
-                            <h1>Education Qualification</h1>
-                        </div>
-                    
-                
-                    <div className="edumaindiv">
-                        <div className="edusubdiv" onClick={() => handleClick("SSC")}>
-                            <h5>SSC</h5>
-                        </div>
-                        <div className="edusubdiv" onClick={() => handleClick("HSC")}>
-                            <h5>HSC</h5>
-                        </div>
-
-                        <div className="edusubdiv" onClick={() => handleClick("BSC")}>
-                            <h5>BSC</h5>
-                        </div>
-                        <div className="edusubdiv" onClick={() => handleClick("MSC")}>
-                            <h5>MSC</h5>
-                        </div>
-                    </div>
-                    
-                    <div className="eduhiddendiv">
-                        {renderDetails(
-                            "SSC",
-                            <div className="card" style={{ width: '100%', height: '100%', borderRadius: '20px' }}>
-                                <div className="row no-gutters" style={{ height: '100%' }}>
-                                    <div className="col-md-6  col-12 eduonclickhiddendiv" >
-                                        <img src={Demo} className="card-img-left img-fluid d-block" style={{ height: '100%' }} alt="..." />
-                                    </div>
-                                    <div className="col-md-6  col-12">
-                                        <div className="card-body hiddencard" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
-                                            <h5 className="card-title">From National University</h5>
-                                            <p className="card-text">
-                                                Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                        {renderDetails(
-                            "HSC",
-                            <div className="card" style={{ width: '100%', height: '100%', borderRadius: '20px' }}>
-                            <div className="row no-gutters" style={{ height: '100%' }}>
-                                <div className="col-md-6  col-12 eduonclickhiddendiv" >
-                                    <img src={Demo} className="card-img-left img-fluid d-block" style={{ height: '100%' }} alt="..." />
-                                </div>
-                                <div className="col-md-6  col-12">
-                                    <div className="card-body hiddencard" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
-                                        <h5 className="card-title">From National University</h5>
-                                        <p className="card-text">
-                                            Some quick example text to build on the card title and
-                                            make up the bulk of the card's content.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        )}
-                        {renderDetails(
-                            "BSC",
-                            <div className="card" style={{ width: '100%', height: '100%', borderRadius: '20px' }}>
-                                <div className="row no-gutters" style={{ height: '100%' }}>
-                                    <div className="col-md-6  col-12 eduonclickhiddendiv" >
-                                        <img src={Demo} className="card-img-left img-fluid d-block" style={{ height: '100%' }} alt="..." />
-                                    </div>
-                                    <div className="col-md-6  col-12">
-                                        <div className="card-body hiddencard" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
-                                            <h5 className="card-title">From National University</h5>
-                                            <p className="card-text">
-                                                Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                        {renderDetails(
-                            "MSC",
-                            <div className="card" style={{ width: '100%', height: '100%', borderRadius: '20px' }}>
-                                <div className="row no-gutters" style={{ height: '100%' }}>
-                                    <div className="col-md-6  col-12 eduonclickhiddendiv" >
-                                        <img src={Demo} className="card-img-left img-fluid d-block" style={{ height: '100%' }} alt="..." />
-                                    </div>
-                                    <div className="col-md-6  col-12">
-                                        <div className="card-body hiddencard" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
-                                            <h5 className="card-title">From National University</h5>
-                                            <p className="card-text">
-                                                Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </div>
-            </section>
+            
         </>
     );
 }

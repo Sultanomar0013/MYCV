@@ -1,0 +1,63 @@
+/*About me section*/
+.cobjectSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.cobjecttiltcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+    border: 3px solid rgba(0, 0, 0, 0.18);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.cobject {
+    transform: translateZ(40px);
+    -webkit-transform: translateZ(40px);
+    -moz-transform: translateZ(40px);
+    -ms-transform: translateZ(40px);
+    -o-transform: translateZ(40px);
+}
+
+.cobjectpara {
+    width: 50%;
+    transform: translateZ(40px);
+    -webkit-transform: translateZ(40px);
+    -moz-transform: translateZ(40px);
+    -ms-transform: translateZ(40px);
+    -o-transform: translateZ(40px);
+}
+
+.cobjectpara p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 750px) {
+
+    /*About me section*/
+    .cobjecttiltcard {
+        width: 90%;
+        height: 80%;
+    }
+
+    .cobject {
+        font-size: 15px;
+    }
+
+    .cobjectpara {
+        width: 70%;
+    }
+
+    .cobjectpara p {
+        font-size: 15px;
+    }
+}
