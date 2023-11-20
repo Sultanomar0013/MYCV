@@ -26,7 +26,7 @@ function Home() {
 
     const renderDetails = (divName, details) => {
         if (selectedDiv === divName) {
-            return <div>{details}</div>;
+            return <div style={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{details}</div>;
         }
         return null;
     };
@@ -99,55 +99,95 @@ function Home() {
 
             <section>
                 <div className=" education">
-                    <Scroll>
                         <div className="edutitle">
                             <h1>Education Qualification</h1>
                         </div>
-                    </Scroll>
+                    
+                
                     <div className="edumaindiv">
                         <div className="edusubdiv" onClick={() => handleClick("SSC")}>
-                            <h4>SSC</h4>
+                            <h5>SSC</h5>
                         </div>
                         <div className="edusubdiv" onClick={() => handleClick("HSC")}>
-                            <h4>HSC</h4>
+                            <h5>HSC</h5>
                         </div>
 
                         <div className="edusubdiv" onClick={() => handleClick("BSC")}>
-                            <h4>BSC</h4>
+                            <h5>BSC</h5>
                         </div>
                         <div className="edusubdiv" onClick={() => handleClick("MSC")}>
-                            <h4>MSC</h4>
+                            <h5>MSC</h5>
                         </div>
                     </div>
+                    
                     <div className="eduhiddendiv">
                         {renderDetails(
                             "SSC",
-                            <div className="eduhidden">
-                                <h1>HidddenSSC</h1>
+                            <div className="card" style={{ width: '100%', height: '100%', borderRadius: '20px' }}>
+                                <div className="row no-gutters" style={{ height: '100%' }}>
+                                    <div className="col-md-6  col-12 eduonclickhiddendiv" >
+                                        <img src={Demo} className="card-img-left img-fluid d-block" style={{ height: '100%' }} alt="..." />
+                                    </div>
+                                    <div className="col-md-6  col-12">
+                                        <div className="card-body hiddencard" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
+                                            <h5 className="card-title">From National University</h5>
+                                            <p className="card-text">
+                                                Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         )}
                         {renderDetails(
                             "HSC",
-                            <div className="eduhidden">
-                                <h1>HidddenHSC</h1>
+                            <div className="card" style={{ width: '100%', height: '100%', borderRadius: '20px' }}>
+                            <div className="row no-gutters" style={{ height: '100%' }}>
+                                <div className="col-md-6  col-12 eduonclickhiddendiv" >
+                                    <img src={Demo} className="card-img-left img-fluid d-block" style={{ height: '100%' }} alt="..." />
+                                </div>
+                                <div className="col-md-6  col-12">
+                                    <div className="card-body hiddencard" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
+                                        <h5 className="card-title">From National University</h5>
+                                        <p className="card-text">
+                                            Some quick example text to build on the card title and
+                                            make up the bulk of the card's content.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
                         )}
                         {renderDetails(
                             "BSC",
-                            <div className="eduhidden">
-                                <h1>HidddenBSC</h1>
+                            <div className="card" style={{ width: '100%', height: '100%', borderRadius: '20px' }}>
+                                <div className="row no-gutters" style={{ height: '100%' }}>
+                                    <div className="col-md-6  col-12 eduonclickhiddendiv" >
+                                        <img src={Demo} className="card-img-left img-fluid d-block" style={{ height: '100%' }} alt="..." />
+                                    </div>
+                                    <div className="col-md-6  col-12">
+                                        <div className="card-body hiddencard" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
+                                            <h5 className="card-title">From National University</h5>
+                                            <p className="card-text">
+                                                Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         )}
                         {renderDetails(
                             "MSC",
-                            <div className="card" style={{width: '50rem', height:'15rem'}}>
-                                <div className="row no-gutters">
-                                    <div className="col-md-4">
-                                        <img src={Demo} className="card-img-left img-fluid d-block" alt="..." />
+                            <div className="card" style={{ width: '100%', height: '100%', borderRadius: '20px' }}>
+                                <div className="row no-gutters" style={{ height: '100%' }}>
+                                    <div className="col-md-6  col-12 eduonclickhiddendiv" >
+                                        <img src={Demo} className="card-img-left img-fluid d-block" style={{ height: '100%' }} alt="..." />
                                     </div>
-                                    <div className="col-md-8">
-                                        <div className="card-body">
-                                            <h5 className="card-title">Card title</h5>
+                                    <div className="col-md-6  col-12">
+                                        <div className="card-body hiddencard" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
+                                            <h5 className="card-title">From National University</h5>
                                             <p className="card-text">
                                                 Some quick example text to build on the card title and
                                                 make up the bulk of the card's content.

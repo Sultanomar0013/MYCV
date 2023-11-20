@@ -24,8 +24,11 @@ const Scroll = ({ children }) => {
             initial="hidden"
             animate={control}
             transition={{ duration: 0.5 }}
+            
+            
+            style={{ }}
         >
-            <h1>{ children } </h1>
+            <div> { children } </div>
         </motion.div>
     );
 }
