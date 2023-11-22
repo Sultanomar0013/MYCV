@@ -41,45 +41,26 @@ function Skill() {
                     <div className="skillstitle">
                         <h1>Skills</h1>
                     </div>
-                    <div className="allskills">
-                        <div className="language">
-                            <h4 className="left">Language</h4>
-                            <img src={CPlus} className="img-fluid" style={{ width:'4%',height:''}}/>
-                            <img src={PHP} style={{ width:'4%',height:''}}/>
-                            <img src={JS} style={{ width:'4%',height:''}}/>
-                        </div>
-                        <div className="design">
-                            <h4 className="left">Front-End Desingn</h4>
-                            <img src={HTML} className="img-fluid" style={{ width:'4%',height:''}}/>
-                            <img src={CSS} style={{ width:'4%',height:''}}/>
-                            <img src={Bootstrap} style={{ width:'4%',height:''}}/>
-                            <img src={Framer} style={{ width:'4%',height:''}}/>
-                            <img src={Reactimg} style={{ width:'4%',height:''}}/>
-                        </div>
-                        <div className="Back-End">
-                            <h4 className="left">Back-End</h4>
-                            <img src={Expressimg} style={{ width:'4%',height:''}}/>
-                            <img src={Nodeimg} style={{ width:'4%',height:''}}/>
-                            <img src={PHP} style={{ width:'4%',height:''}}/>
-                        </div>
-                        <div className="db">
-                            <h4 className="left">Database</h4>
-                            <img src={Mongoimg} style={{ width:'4%',height:''}}/>
-                            <img src={Mysqlimg} style={{ width:'4%',height:''}}/>
-                        </div>
-                        <div className="vc">
-                            <h4 className="left">Version Control</h4>
-                            <img src={Github} style={{ width:'4%',height:''}}/>
-                        </div>
-                        <div className="other">
-                            <h4 className="left">Other Software</h4>
-                            <img src={Postman} style={{ width:'4%',height:''}}/>
-                        </div>
-                        <div className="otherskills">
-                            <h4 className="left">Other Skills</h4>
-                            <img src={Leetcode} style={{ width:'4%',height:''}}/>
-                            <img src={HackerRank} style={{ width:'4%',height:''}}/>
-                        </div>
+                    <div>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>25</td>
+                                <td>New York</td>
+                            </tr>
+                            <tr>
+                                <td>Jane Doe</td>
+                                <td>30</td>
+                                <td>Los Angeles</td>
+                            </tr>
+                            <tr>
+                                <td>Bob Smith</td>
+                                <td>22</td>
+                                <td>Chicago</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     </div>
 
                 </div>
