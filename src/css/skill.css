@@ -1,4 +1,4 @@
-.skilldiv{
+.skilldiv {
     width: 100%;
     height: 100vh;
     background: #ffffff;
@@ -7,10 +7,12 @@
     align-items: center;
     flex-direction: column;
 }
+
 .skillstitle {
     margin-top: 5%;
 }
-.allskills{
+
+.allskills {
     margin-top: 5%;
     display: flex;
     align-items: center;
@@ -18,10 +20,33 @@
     width: 90%;
 }
 
-.allskills > div{
+/*.allskills > div{
     padding: 1%; 
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}*/
+.fixed-height-table {
+    table-layout: fixed;
+    /* Fixed layout to ensure fixed width */
+    width: 100%;
+    /* Adjust the height as needed */
+    overflow: auto;
+    /* Enable vertical scrolling if content exceeds the fixed height */
+    border-collapse: collapse;
+}
+
+/* Apply styles to table cells */
+.fixed-height-table td,
+.fixed-height-table th {
+    border: 1px solid #ddd;
+    /* Add border for better visibility */
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Display ellipsis for overflowing content */
 }

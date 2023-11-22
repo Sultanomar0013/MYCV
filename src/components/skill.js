@@ -41,26 +41,31 @@ function Skill() {
                     <div className="skillstitle">
                         <h1>Skills</h1>
                     </div>
-                    <div>
-                    <table border="1">
-                        <tbody>
-                            <tr>
-                                <td>John Doe</td>
-                                <td>25</td>
-                                <td>New York</td>
-                            </tr>
-                            <tr>
-                                <td>Jane Doe</td>
-                                <td>30</td>
-                                <td>Los Angeles</td>
-                            </tr>
-                            <tr>
-                                <td>Bob Smith</td>
-                                <td>22</td>
-                                <td>Chicago</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div style={{ display: 'flex', justifyContent: 'center', width: '80%' }}>
+                        <table class="fixed-height-table">
+                            <thead>
+                                <tr>
+                                    <th>Header 1</th>
+                                    <th>Header 2</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Row 1, Cell 1</td>
+                                    <td><img src={CPlus} className="img-fluid" style={{ width:'10%',height:''}}/></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Row 2, Cell 1</td>
+                                    <td>Row 2, Cell 2</td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+
                     </div>
 
                 </div>
