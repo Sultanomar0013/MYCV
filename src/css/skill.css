@@ -27,20 +27,23 @@
     align-items: center;
     justify-content: center;
 }*/
-.fixed-height-table {
+.fixed-height-table{
     table-layout: fixed;
+    border-color: white;
     /* Fixed layout to ensure fixed width */
     width: 100%;
     /* Adjust the height as needed */
     overflow: auto;
     /* Enable vertical scrolling if content exceeds the fixed height */
     border-collapse: collapse;
+    margin-top:5% ;
+    
 }
 
 /* Apply styles to table cells */
 .fixed-height-table td,
 .fixed-height-table th {
-    border: 1px solid #ddd;
+    border: 1px solid #413e3e;
     /* Add border for better visibility */
     padding: 8px;
     text-align: left;
@@ -48,5 +51,11 @@
     /* Prevent text wrapping */
     overflow: hidden;
     text-overflow: ellipsis;
+
     /* Display ellipsis for overflowing content */
+}
+
+.fixed-height-table td{
+    justify-content: center;
+    align-items: center;
 }
