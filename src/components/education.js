@@ -32,7 +32,7 @@ function Education() {
                 <Popup>
                 <div style={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 {details}
-                </div>;
+                </div>
             </Popup>
             ) 
             

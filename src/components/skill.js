@@ -42,7 +42,7 @@ function Skill() {
                         <h1>Skills</h1>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'center', width: '80%' }}>
-                        <table class="fixed-height-table">
+                        <table class="table-responsive">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -53,56 +53,56 @@ function Skill() {
                             <tbody>
                                 <tr>
                                     <td><h5>Language :</h5></td>
-                                    <td>
-                                        <img src={CPlus} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
-                                        <img src={PHP} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
-                                        <img src={JS} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
+                                    <td className="imgtd">
+                                        <img src={CPlus} className="img-fluid skillimage"/>
+                                        <img src={PHP} className="img-fluid skillimage"  />
+                                        <img src={JS} className="img-fluid skillimage" />
                                     </td>
 
 
                                 </tr>
                                 <tr>
                                     <td><h5>Front-End Desingn :</h5></td>
-                                    <td><img src={HTML} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
-                                        <img src={CSS} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
-                                        <img src={Bootstrap} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
-                                        <img src={Framer} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
-                                        <img src={Reactimg} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
+                                    <td className="imgtd"><img src={HTML} className="img-fluid skillimage"  />
+                                        <img src={CSS} className="img-fluid skillimage"  />
+                                        <img src={Bootstrap} className="img-fluid skillimage"  />
+                                        <img src={Framer} className="img-fluid skillimage"  />
+                                        <img src={Reactimg} className="img-fluid skillimage"  />
                                     </td>
 
                                 </tr>
 
                                 <tr>
                                     <td><h5>Back-End :</h5></td>
-                                    <td><img src={Expressimg} className="img-fluid skillimage" style={{ width: '15%', height: '' }} />
-                                        <img src={Nodeimg} className="img-fluid skillimage" style={{ width: '13%', height: '' }} />
-                                        <img src={PHP} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
+                                    <td className="imgtd"><img src={Expressimg} className="img-fluid skillimage"  />
+                                        <img src={Nodeimg} className="img-fluid skillimage"  />
+                                        <img src={PHP} className="img-fluid skillimage" />
                                     </td>
 
                                 </tr>
                                 <tr>
                                     <td><h5>Database :</h5></td>
-                                    <td> <img src={Mongoimg} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
-                                        <img src={Mysqlimg} className="img-fluid skillimage" style={{ width: '15%', height: '' }} />
+                                    <td className="imgtd"> <img src={Mongoimg} className="img-fluid skillimage" />
+                                        <img src={Mysqlimg} className="img-fluid skillimage"  />
                                     </td>
 
                                 </tr>
                                 <tr>
                                     <td><h5>Version Control :</h5></td>
-                                    <td><img src={Github} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
+                                    <td className="imgtd"><img src={Github} className="img-fluid skillimage"  />
                                     </td>
 
                                 </tr>
                                 <tr>
                                     <td><h5>Other Software :</h5></td>
-                                    <td><img src={Postman} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
+                                    <td className="imgtd"><img src={Postman} className="img-fluid skillimage"  />
                                     </td>
 
                                 </tr>
                                 <tr>
                                     <td><h5>Other Skills</h5></td>
-                                    <td><img src={Leetcode} className="img-fluid skillimage" style={{ width: '20%', height: '' }} />
-                                        <img src={HackerRank} className="img-fluid skillimage" style={{ width: '10%', height: '' }} />
+                                    <td className="imgtd"><img src={Leetcode} className="img-fluid skillimage"  />
+                                        <img src={HackerRank} className="img-fluid skillimage" />
                                     </td>
 
                                 </tr>
