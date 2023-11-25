@@ -39,7 +39,7 @@ function Home() {
                 <div className=" textdiv ">
                     <div className="container content text-3d-shadow">
                         <Reveal>
-                            <h1>
+                            <h1 className="homeintro">
                                 Hey There!!! My name is Omar Saleh Sultan,{" "}
                                 <span
                                     className="auto-type"

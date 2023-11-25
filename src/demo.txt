@@ -38,3 +38,274 @@
                             <img src={HackerRank} style={{ width:'4%',height:''}}/>
                         </div>
                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className=" projectdiv">
+                    <div className="projecttitle">
+                        <h2>My Project</h2>
+                    </div>
+
+                    <div className="row subprojectdiv">
+
+                        <div className="prosecdiv">
+                            <div className="col-6 col-12 imgdiv">
+                                <img src={Demo} className="card-img-top img-fluid d-block proimg" alt="..." />
+                            </div>
+                                <div className="col-6 col-12 card-body">
+                                    <h5 className="">Card title</h5>
+                                    <p className="">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+ <div className=" projectdiv">
+                    <div className="projecttitle">
+                        <h2>My Project</h2>
+                    </div>
+                    <div className="prodivpart">
+
+                        <div className="projectSec">
+                            <div className="card projectpart" >
+                                <div className="col-4 col-6 col-12 proimgdiv" >
+                                    <img src={Demo} className="card-img-top img-fluid d-block proimg" alt="..." />
+                                </div>
+                                <div className="card-body prodes col-4 col-6 col-12">
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div className="probut">
+                                    <a href="#" className="btn btn-primary">Github Link</a>
+                                    <a href="#" className="btn btn-primary">Live Link</a>
+                                </div>
+                            </div>
+
+
+                            <div className="card projectpart" >
+                                <div className="col-6 col-12 proimgdiv" >
+                                    <img src={Demo} className="card-img-top img-fluid d-block proimg" alt="..." />
+                                </div>
+                                <div className="card-body prodes col-6 col-12">
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div className="probut">
+                                    <a href="#" className="btn btn-primary">Github Link</a>
+                                    <a href="#" className="btn btn-primary">Live Link</a>
+                                </div>
+                            </div>
+
+
+                            <div className="card projectpart" >
+                                <div className="col-6 col-12 proimgdiv" >
+                                    <img src={Demo} className="card-img-top img-fluid d-block proimg" alt="..." />
+                                </div>
+                                <div className="card-body prodes col-6 col-12">
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div className="probut">
+                                    <a href="#" className="btn btn-primary">Github Link</a>
+                                    <a href="#" className="btn btn-primary">Live Link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="projectSec prosecmarg">
+                            <div className="card projectpart" >
+                                <div className="col-6 col-12 proimgdiv" >
+                                    <img src={Demo} className="card-img-top img-fluid d-block proimg" alt="..." />
+                                </div>
+                                <div className="card-body prodes col-6 col-12">
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                                </div>
+                                <div className="probut">
+                                    <a href="#" className="btn btn-primary">Github Link</a>
+                                    <a href="#" className="btn btn-primary">Live Link</a>
+                                </div>
+                            </div>
+
+
+                            <div className="card projectpart" >
+                                <div className="col-6 col-12 proimgdiv" >
+                                    <img src={Demo} className="card-img-top img-fluid d-block proimg" alt="..." />
+                                </div>
+                                <div className="card-body prodes col-6 col-12">
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div className="probut">
+                                    <a href="#" className="btn btn-primary">Github Link</a>
+                                    <a href="#" className="btn btn-primary">Live Link</a>
+                                </div>
+                            </div>
+
+                            <div className="card projectpart" >
+                                <div className="col-6 col-12 proimgdiv" >
+                                    <img src={Demo} className="card-img-top img-fluid d-block proimg" alt="..." />
+                                </div>
+                                <div className="card-body prodes col-6 col-12">
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div className="probut">
+                                    <a href="#" className="btn btn-primary">Github Link</a>
+                                    <a href="#" className="btn btn-primary">Live Link</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+.projectsection{
+    padding-top: 10%;
+}
+.projectdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 120%;
+    background: #2b323c;
+}
+.projecttitle{
+    margin-top: 10%;
+    margin-bottom: 1%;
+    color: aliceblue;
+}
+.prodivpart{
+    width: 100%;
+    height: 90%;
+    margin-bottom: 10%;
+}
+.projectSec{
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    height: 45%;
+    width: 100%;
+}
+.projectpart{
+    width: 30%;
+    height:100%;
+}
+.proimgdiv{
+    width: 100%;
+    height: 30%;
+}
+.proimg{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.prodes{
+    width:100%;
+    height: 60%;
+    text-align: justify;
+    font-size: smaller;
+}
+
+
+.probut{
+    display: flex;
+    justify-content: space-evenly;
+    height: 15%;
+    margin-bottom: 5%;
+}
+.probut a{
+    font-size: x-small;
+}
+
+.prosecmarg{
+    margin-top: 2%;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+.projectdiv{
+                
+        height: 125%;
+    }
+.prodivpart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projectSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projectpart{
+    width:80%;
+}
+.projectpart{
+    margin-top: 5%;
+}
+.proimgdiv{
+    width: 100%;
+    height: 5%;
+}
+.proimg{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.prodes{
+    width:100%;
+    height: 70%;
+}
+
+.probut{
+    display: flex;
+    justify-content: space-evenly;
+    height: 15%;
+    margin-bottom: 5%;
+}
+.prosecmarg{
+    margin-bottom: 10%;
+}
+
+}
+

@@ -81,7 +81,7 @@ function Education() {
                                 <div className="row no-gutters" style={{ height: '100%' }}>
                                     <div className="col-md-6  col-12 eduonclickhiddendiv" >
                                         <Popup>
-                                        <img src={Demo} className="card-img-left img-fluid d-block" style={{ height: '100%' }} alt="..." />
+                                        <img src={Demo} className="card-img-left img-fluid d-block eduimg" style={{ height: '100%' }} alt="..." />
                                         </Popup>
                                     
                                         
@@ -105,7 +105,7 @@ function Education() {
                                 <div className="row no-gutters" style={{ height: '100%' }}>
                                     <div className="col-md-6  col-12 eduonclickhiddendiv" >
                                     <Popup>
-                                        <img src={Demo} className="card-img-left img-fluid d-block" style={{ height: '100%' }} alt="..." />
+                                        <img src={Demo} className="card-img-left img-fluid d-block eduimg" style={{ height: '100%' }} alt="..." />
                                         </Popup>
                                     </div>
                                     <div className="col-md-6  col-12">
@@ -126,7 +126,7 @@ function Education() {
                                 <div className="row no-gutters" style={{ height: '100%' }}>
                                     <div className="col-md-6  col-12 eduonclickhiddendiv" >
                                     <Popup>
-                                        <img src={Demo} className="card-img-left img-fluid d-block" style={{ height: '100%' }} alt="..." />
+                                        <img src={Demo} className="card-img-left img-fluid d-block eduimg" style={{ height: '100%' }} alt="..." />
                                         </Popup>
                                     </div>
                                     <div className="col-md-6  col-12">
@@ -147,7 +147,7 @@ function Education() {
                                 <div className="row no-gutters" style={{ height: '100%' }}>
                                     <div className="col-md-6  col-12 eduonclickhiddendiv" >
                                     <Popup>
-                                        <img src={Demo} className="card-img-left img-fluid d-block" style={{ height: '100%' }} alt="..." />
+                                        <img src={Demo} className="card-img-left img-fluid d-block eduimg" style={{ height: '100%' }} alt="..." />
                                         </Popup>
                                     </div>
                                     <div className="col-md-6  col-12">

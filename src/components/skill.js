@@ -36,13 +36,13 @@ import Scroll from "../Animation/scroll";
 function Skill() {
     return (
         <>
-            <section>
+            <section className="">
                 <div className="skilldiv">
                     <div className="skillstitle">
                         <h1>Skills</h1>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'center', width: '80%' }}>
-                        <table class="table-responsive">
+                        <table className="table-responsive">
                             <thead>
                                 <tr>
                                     <th></th>
