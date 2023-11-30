@@ -7,9 +7,11 @@ import Skill from './components/skill';
 import Project from './components/project';
 import Experience from './components/experiencs';
 import Contact from './components/contact';
+import Navbar from './components/navbar';
 function App() {
   return (
     <div>
+      <Navbar />
       <Home />
       <About />
       <Education />

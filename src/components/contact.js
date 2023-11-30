@@ -18,7 +18,7 @@ import { useInView } from "react-intersection-observer";
 import Scroll from "../Animation/scroll"
 import Popup from "../Animation/popup";
 import Scrolldown from "../Animation/scrolldown";
-
+import Right2 from "../Animation/transitionright2";
 import Facebook from "../logoImages/facebook.png";
 import Instagram from "../logoImages/instagram.png";
 import Github from "../logoImages/github-sign.png";
@@ -29,6 +29,7 @@ import Leetcode from "../logoImages/leetcode.png"
 import HackerRank from "../logoImages/Hackerrank.png"
 
 function Contact() {
+
     return (
         <>
             <section>
@@ -40,21 +41,49 @@ function Contact() {
                         <div className="contactimgsix">
 
                             <div className="contactthreeimg">
-                                <img src={Linkedin} className="img-fluid contactImg" />
-                                <img src={Gmail} className="img-fluid contactImg" />
-                                <img src={Github} className="img-fluid contactImg" />
+                        
+                                <motion.img 
+                                animate={{ rotate: -360 }}
+                                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                                src={Linkedin} className="img-fluid contactImg" />
+                
+                                <motion.img 
+                                animate={{ rotate: 360 }}
+                                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}src={Gmail} className="img-fluid contactImg" />
+
+                                <motion.img
+                                animate={{ rotate: -360 }}
+                                transition={{ duration: 5, repeat: Infinity, ease: "linear" }} src={Github} className="img-fluid contactImg" />
                             </div>
 
                             <div className="contactthreeimg" >
-                                <img src={Twitter} className="img-fluid contactImg" />
-                                <img src={Facebook} className="img-fluid contactImg" />
-                                <img src={Instagram} className="img-fluid contactImg" />
+                                <motion.img 
+                                animate={{ rotate: 360 }}
+                                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}src={Twitter} className="img-fluid contactImg" />
+                                <motion.img 
+                                animate={{ rotate: -360 }}
+                                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}src={Facebook} className="img-fluid contactImg" />
+                                <motion.img 
+                                animate={{ rotate: 360 }}
+                                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}src={Instagram} className="img-fluid contactImg" />
                             </div>
 
                         </div>
                         <div className="contacttwoimg">
-                            <img src={Leetcode} className="img-fluid contactImg twoimg" style={{marginRight:'2%'}} />
-                            <img src={HackerRank} className="img-fluid contactImg twoimg" style={{marginLeft:'2%',width:'10%'}} />
+
+                            <motion.img 
+                            animate={{
+                                scale: [ 1, 1.2, 1 ],
+                                opacity: [1, 0.8, 1]
+                            }}
+                            transition= {{ duration: 6,repeat: Infinity, ease: 'easeInOut' }} 
+                            src={Leetcode} className="img-fluid contactImg twoimg" style={{marginRight:'2%'}} />
+                            
+                                <img
+                            
+                                src={HackerRank} className="img-fluid contactImg twoimg" style={{marginLeft:'2%',width:'10%'}} />
+                            
+                            
                         </div>
 
 

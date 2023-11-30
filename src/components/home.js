@@ -16,7 +16,6 @@ import { useInView } from "react-intersection-observer";
 //import { Fade, Roll, Bounce, Slide, Zoom } from 'react-reveal';
 //import FadeOnScroll from '../Animation/fadescroll';
 import Scroll from "../Animation/scroll";
-
 function Home() {
 
     useEffect(() => {

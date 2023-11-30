@@ -3,13 +3,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     background: #2b323c;
     color: #fff
 }
 
 .edutitle {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .edumaindiv {
