@@ -31,7 +31,7 @@ function About() {
     }, []);
     return (
         <>
-            <section className="aboutmeSection">
+            <section id="about" className="aboutmeSection">
                 <div className=" tiltcard" data-tilt>
                     <div className="aboutme">
                         <Left>

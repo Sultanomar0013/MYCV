@@ -34,7 +34,7 @@ function Home() {
 
     return (
         <>
-            <section>
+            <section id="home">
                 <div className=" textdiv ">
                     <div className="container content text-3d-shadow">
                         <Reveal>

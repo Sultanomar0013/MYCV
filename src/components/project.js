@@ -24,7 +24,7 @@ import Demo from "../images/TheStarryNightBlack.jpeg";
 function Project() {
     return (
         <>
-            <section className="projectsection">
+            <section id="project" className="projectsection">
 
                 <div className="projectdiv">
                     <div className="projectTitle">

@@ -31,7 +31,7 @@ function Carear() {
     }, []);
     return (
         <>
-            <section className="cobjectSection">
+            <section id="objective" className="cobjectSection">
                 <div className=" cobjecttiltcard" data-tilt>
                     <div className="cobject">
                         <Left>

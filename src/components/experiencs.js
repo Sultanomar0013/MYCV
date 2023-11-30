@@ -20,7 +20,7 @@ import Demo from "../images/TheStarryNightBlack.jpeg";
 function Experience() {
     return (
         <>
-            <section>
+            <section id="experience">
                 <div className=" expdiv">
                     <div className="exptitle">
                         <h2>My Experience</h2>

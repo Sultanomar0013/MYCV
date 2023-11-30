@@ -17,13 +17,13 @@ function NavbarSection() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#home" style={customStyle} >Home</Nav.Link>
-                        <Nav.Link href="#link" style={customStyle} >About</Nav.Link>
-                        <Nav.Link href="#link" style={customStyle} >Qualification</Nav.Link>
-                        <Nav.Link href="#link" style={customStyle} >Objective</Nav.Link>
-                        <Nav.Link href="#link" style={customStyle} >Skills</Nav.Link>
-                        <Nav.Link href="#link" style={customStyle} >Project</Nav.Link>
-                        <Nav.Link href="#link" style={customStyle} >Experience</Nav.Link>
-                        <Nav.Link href="#link" style={customStyle} >Contact</Nav.Link>
+                        <Nav.Link href="#about" style={customStyle} >About</Nav.Link>
+                        <Nav.Link href="#education" style={customStyle} >Qualification</Nav.Link>
+                        <Nav.Link href="#objective" style={customStyle} >Objective</Nav.Link>
+                        <Nav.Link href="#skill" style={customStyle} >Skills</Nav.Link>
+                        <Nav.Link href="#project" style={customStyle} >Project</Nav.Link>
+                        <Nav.Link href="#experience" style={customStyle} >Experience</Nav.Link>
+                        <Nav.Link href="#contact" style={customStyle} >Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

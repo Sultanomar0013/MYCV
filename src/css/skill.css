@@ -29,7 +29,7 @@
 }*/
 .table-responsive{
     table-layout: fixed;
-    border-color: white;
+    border-color: rgb(255, 255, 255);
     /* Fixed layout to ensure fixed width */
     width: 100%;
     /* Adjust the height as needed */
@@ -42,7 +42,7 @@
 /* Apply styles to table cells */
 .table-responsive td,
 .table-responsive th {
-    border: 1px solid #413e3e;
+    border: 1px solid #ffffff;
     /* Add border for better visibility */
     padding: 8px;
 

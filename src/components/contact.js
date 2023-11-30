@@ -32,7 +32,7 @@ function Contact() {
 
     return (
         <>
-            <section>
+            <section id="contact">
                 <div className="contactmaindiv">
                     <div className="contacttitle">
                         <h3>Contact and Social Connection</h3>
