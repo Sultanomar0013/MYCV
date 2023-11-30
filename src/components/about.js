@@ -41,10 +41,8 @@ function About() {
                     <div className="aboutmepara">
                         <Right>
                         <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            I am like those people who is enthusiast in tech related things, interested in 
+                            learning new skills and find oppurtunaties to grab knowledge.
                         </p>
                         </Right>
                     </div>
