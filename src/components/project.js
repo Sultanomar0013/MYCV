@@ -17,6 +17,12 @@ import { useInView } from "react-intersection-observer";
 //import FadeOnScroll from '../Animation/fadescroll';
 import Scroll from "../Animation/scroll";
 import Demo from "../images/TheStarryNightBlack.jpeg";
+import Travel1 from "../images/travel1.png"
+import Travel2 from "../images/travel2.png"
+import Travel3 from "../images/travel3.png"
+import Inventory1 from "../images/Inventory1.png";
+import Inventory2 from "../images/Inventory2.png";
+import Inventory3 from "../images/Inventory3.png";
 
 
 
@@ -35,53 +41,64 @@ function Project() {
                     </div>
                     <div className="projectCarsoulDiv">
                         <Carousel className="projectCarousel">
-                            <Carousel.Item style={{borderRadius:'10px'}}>
-                                <img src={Demo} alt="First slide" className="d-block w-100" style={{borderRadius:'10px'}}/>
-                                <Carousel.Caption>
-                                    <h3>First slide label</h3>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <Carousel.Item style={{borderRadius:'10px',}} >
+                                <img src={Travel1} alt="First slide" className="d-block w-100" 
+                                style={{borderRadius:'10px', filter:"blur(2px) brightness(0.5) grayscale(0%)" }}/>
+                                <Carousel.Caption >
+                                    <h3>Travel Management System</h3>
+                                    <p>Its a Travel Management System made by Node, Express, React.</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item style={{borderRadius:'10px'}}>
-                                <img src={Demo} alt="First slide" className="d-block w-100" style={{borderRadius:'10px'}}/>
+                                <img src={Travel3} alt="First slide" className="d-block w-100" 
+                                style={{borderRadius:'10px',filter:"blur(2px) brightness(0.5) grayscale(30%)"}}/>
                                 <Carousel.Caption>
-                                    <h3>Second slide label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <h3>Authentication System</h3>
+                                    <p>JWT add for user authentication.</p>
+                                
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item style={{borderRadius:'10px'}}>
-                                <img src={Demo} alt="First slide" className="d-block w-100" style={{borderRadius:'10px'}}/>
+                                <img src={Travel2} alt="First slide" className="d-block w-100" 
+                                style={{borderRadius:'10px',filter:"blur(2px) brightness(0.5) grayscale(30%)"}}/>
                                 <Carousel.Caption>
-                                    <h3>Third slide label</h3>
+                                    <h3>Mongodb</h3>
                                     <p>
-                                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                        Mongodb use for Database
                                     </p>
+                                    <a href="https://github.com/Sultanomar0013/Travel-Management" className="btn" style={{color:"white",textDecoration: "underline"}}>Github</a>
+                                    <a href="https://travel-management-xi.vercel.app/" className="btn" style={{color:"white",textDecoration: "underline"}}>Live</a>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
 
                         <Carousel className="projectCarousel">
                             <Carousel.Item style={{borderRadius:'10px'}}>
-                                <img src={Demo} alt="First slide" className="d-block w-100" style={{borderRadius:'10px'}}/>
+                                <img src={Inventory1} alt="First slide" className="d-block w-100" 
+                                style={{borderRadius:'10px',filter:"blur(2px) brightness(0.5) grayscale(30%)"}}/>
                                 <Carousel.Caption>
-                                    <h3>First slide label</h3>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    <h3>Inventory Management System</h3>
+                                    <p>Its a Travel Management System made by Node, Express, React.</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item style={{borderRadius:'10px'}}>
-                                <img src={Demo} alt="First slide" className="d-block w-100" style={{borderRadius:'10px'}}/>
+                                <img src={Inventory2} alt="First slide" className="d-block w-100" 
+                                style={{borderRadius:'10px',filter:"blur(2px) brightness(0.5) grayscale(30%)"}}/>
                                 <Carousel.Caption>
-                                    <h3>Second slide label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <h3>User basis Home management</h3>
+                                    <p>JWT Authentication for user account management</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item style={{borderRadius:'10px'}}>
-                                <img src={Demo} alt="First slide" className="d-block w-100" style={{borderRadius:'10px'}}/>
+                                <img src={Inventory3} alt="First slide" className="d-block w-100" 
+                                style={{borderRadius:'10px',filter:"blur(2px) brightness(0.5) grayscale(30%)"}}/>
                                 <Carousel.Caption>
-                                    <h3>Third slide label</h3>
+                                    <h3>CRUD Operation</h3>
                                     <p>
-                                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                        A Simple CRUD operation done here for managment.
                                     </p>
+                                    <a href="https://github.com/Sultanomar0013/InventoryManagemenmtDeploy-" className="btn" style={{color:"white",textDecoration: "underline"}}>Github</a>
+                                    <a href="https://inventorymanagementf.vercel.app/" className="btn" style={{color:"white",textDecoration: "underline"}}>Live</a>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>

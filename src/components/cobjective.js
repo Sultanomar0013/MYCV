@@ -19,7 +19,7 @@ import Right from "../Animation/transitionright";
 
 function Carear() {
     useEffect(() => {
-        $(".cobjecttiltcard").tilt({
+        $(".tiltcard").tilt({
             max: 25,
             speed: 400,
             glare: false,
@@ -32,7 +32,7 @@ function Carear() {
     return (
         <>
             <section id="objective" className="cobjectSection">
-                <div className=" cobjecttiltcard" data-tilt>
+                <div className="tiltcard cobjecttiltcard" data-tilt>
                     <div className="cobject">
                         <Left>
                             <h6>Carear Objective</h6>

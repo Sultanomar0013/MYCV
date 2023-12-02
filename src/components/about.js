@@ -32,7 +32,7 @@ function About() {
     return (
         <>
             <section id="about" className="aboutmeSection">
-                <div className=" tiltcard" data-tilt>
+                <div className="tiltcard" data-tilt>
                     <div className="aboutme">
                         <Left>
                             <h6>About Me</h6>

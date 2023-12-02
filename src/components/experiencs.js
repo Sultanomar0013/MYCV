@@ -14,6 +14,7 @@ import { useInView } from "react-intersection-observer";
 //import FadeOnScroll from '../Animation/fadescroll';
 import Scroll from "../Animation/scroll";
 import Demo from "../images/TheStarryNightBlack.jpeg";
+import Exper from "../images/experience.png";
 
 
 
@@ -30,15 +31,14 @@ function Experience() {
                         <div className="expSec">
                             <div className="card exppart" >
                                 <div className="col-4 col-6 col-12 expimgdiv" >
-                                    <img src={Demo} className="card-img-top img-fluid d-block expimg" alt="..." />
+                                    <img src={Exper} className="card-img-top img-fluid d-block expimg" alt="..." />
                                 </div>
                                 <div className="card-body expdes col-4 col-6 col-12">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h5 className="card-title">Working as a JR. Software Engineer at erp.com.bd</h5>
+                                    <p className="card-text"></p>
                                 </div>
                                 <div className="expbut">
-                                    <a href="#" className="btn btn-primary">Github Link</a>
-                                    <a href="#" className="btn btn-primary">Live Link</a>
+                                    <a href="https://erp.com.bd/web/" className="btn btn-primary">Website Link</a>
                                 </div>
                             </div>
                         </div>

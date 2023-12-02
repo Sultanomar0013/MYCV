@@ -1,11 +1,9 @@
-.projectsection{
-    padding-top: ;
-}
+
 
 .projectdiv{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     background: #2b323c;
     width: 100%;
@@ -13,6 +11,7 @@
 
 }
 .projectTitle{
+    margin-top: 10%;
     margin-bottom: 4rem;
     color: aliceblue;
 }
@@ -20,7 +19,6 @@
     display: flex;
     justify-content: space-around;
     width:100%;
-    height: ;
 }
 .projectCarousel{
     width: 45%;

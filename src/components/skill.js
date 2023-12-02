@@ -83,8 +83,9 @@ function Skill() {
 
                                 <tr>
                                     <td><h5><Left>Back-End :</Left></h5></td>
-                                    <td className="imgtd"><img src={Expressimg} className="img-fluid skillimage"  />
+                                    <td className="imgtd">
                                     <Fade>
+                                    <img src={Expressimg} className="img-fluid skillimage"  />
                                     <img src={Nodeimg} className="img-fluid skillimage"  />
                                         <img src={PHP} className="img-fluid skillimage" />
                                     </Fade>
@@ -95,8 +96,9 @@ function Skill() {
                                 <tr>
                                     <td><h5><Left>Database :</Left></h5></td>
                                     
-                                    <td className="imgtd"> <img src={Mongoimg} className="img-fluid skillimage" />
+                                    <td className="imgtd"> 
                                     <Fade>
+                                    <img src={Mongoimg} className="img-fluid skillimage" />
                                     <img src={Mysqlimg} className="img-fluid skillimage"  />
                                     </Fade>
                                         
