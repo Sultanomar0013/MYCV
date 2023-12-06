@@ -68,80 +68,74 @@ function Contact() {
 
     return (
         <>
-            <section id="contact">
+            <section id="contact" className="contactSection">
+            <div>
+                    &emsp;
+                </div> <div>
+                    &emsp;
+                </div>
                 <div className="contactmaindiv">
-                    <div className="contacttitle">
-                        <h3>Contact and Social Connection</h3>
+                    <div className="contactthreeimg">
+
+                        <motion.img
+                            onClick={redirectToLinkedin}
+                            animate={{ rotate: -360 }}
+                            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                            src={Linkedin} // Assuming Linkedin is the variable holding the image source
+                            className="img-fluid contactImg"
+                            alt="LinkedIn Profile" />
+
+                        <motion.img
+                            onClick={redirectToGmail}
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                            src={Gmail} className="img-fluid contactImg" />
+
+                        <motion.img
+                            onClick={redirectToGithub}
+                            animate={{ rotate: -360 }}
+                            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                            src={Github} className="img-fluid contactImg" />
+                        <motion.img
+
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                            src={Twitter} className="img-fluid contactImg" />
+                        <motion.img
+                            onClick={redirectToFacebook}
+                            animate={{ rotate: -360 }}
+                            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                            src={Facebook} className="img-fluid contactImg" />
+                        <motion.img
+                            onClick={redirectToInstagram}
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                            src={Instagram} className="img-fluid contactImg" />
+                    
+
+                        <motion.img
+                            onClick={redirectToHackerRank}
+                            animate={{ rotate: -360 }}
+                            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                            src={HackerRank} className="img-fluid contactImg" />
+
                     </div>
-                    <div className="contactimgdiv">
-                        <div className="contactimgsix">
-
-                            <div className="contactthreeimg">
-
-
-                                <motion.img
-                                    onClick={redirectToLinkedin}
-                                    animate={{ rotate: -360 }}
-                                    transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                                    src={Linkedin} // Assuming Linkedin is the variable holding the image source
-                                    className="img-fluid contactImg"
-                                    alt="LinkedIn Profile" />
-
-                                <motion.img
-                                    onClick={redirectToGmail}
-                                    animate={{ rotate: 360 }}
-                                    transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                                    src={Gmail} className="img-fluid contactImg" />
-
-                                <motion.img
-                                    onClick={redirectToGithub}
-                                    animate={{ rotate: -360 }}
-                                    transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                                    src={Github} className="img-fluid contactImg" />
-                            </div>
-
-                            <div className="contactthreeimg" >
-                                <motion.img
-
-                                    animate={{ rotate: 360 }}
-                                    transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                                    src={Twitter} className="img-fluid contactImg" />
-                                <motion.img
-                                    onClick={redirectToFacebook}
-                                    animate={{ rotate: -360 }}
-                                    transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                                    src={Facebook} className="img-fluid contactImg" />
-                                <motion.img
-                                    onClick={redirectToInstagram}
-                                    animate={{ rotate: 360 }}
-                                    transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                                    src={Instagram} className="img-fluid contactImg" />
-                            </div>
-
-                        </div>
-                        <div className="contacttwoimg">
-
-                            <motion.img
-                                onClick={redirectToLeetcode}
-                                animate={{
-                                    scale: [1, 1.2, 1],
-                                    opacity: [1, 0.8, 1]
-                                }}
-                                transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-                                src={Leetcode} className="img-fluid contactImg twoimg" style={{ marginRight: '2%' }} />
-
-                            <img
-                                onClick={redirectToHackerRank} src={HackerRank} className="img-fluid contactImg twoimg"
-                                style={{ marginLeft: '2%', width: '10%' }} />
-
-
-                        </div>
-
-
+                    <div className="leetdiv">
+                    <motion.img
+                            onClick={redirectToLeetcode}
+                            animate={{
+                                scale: [1, 1.2, 1],
+                                opacity: [1, 0.8, 1]
+                            }}
+                            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+                            src={Leetcode} className="img-fluid contactImg1" style={{ marginRight: '2%' }} />
                     </div>
                 </div>
+                <div>
+                    &emsp;
+                </div> 
             </section>
-            
+
         </>
     )
 };

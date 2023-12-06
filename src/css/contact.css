@@ -1,62 +1,24 @@
-.contactmaindiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-}
-.contactimgdiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    height: 20rem;
-    margin-top: 4%;
-}
-.contactimgsix{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 10rem;
-    
+.contactSection{
+    background: #64686e;
 }
 .contactthreeimg{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.contacttwoimg{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width:100%;
-    height: 10rem;
-}
-
-
-
 .contactImg{
-    width: 15%;
-    object-fit: fill;
+    width: 2rem;
 }
 
-@media only screen and (max-width: 750px) {
-    .contactimgdiv{
-        height:30rem;
-    }
-    .contactimgsix{
-        flex-direction: column;
-        height: 15rem;
-        justify-content: space-evenly;
-    }
-    .contacttwoimg{
-        justify-content:center;
-        align-items:baseline;
-    }
-    .twoimg{
-        width:30%;
-    }
+.leetdiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+
+.contactImg1{
+    width:4rem;
 }

@@ -36,11 +36,9 @@ function Project() {
                     <div className="projectTitle">
                         <h2>My Project</h2>
                     </div>
-                    <div>
-                        
-                    </div>
+                    <br />
                     <div className="projectCarsoulDiv">
-                        <Carousel className="projectCarousel">
+                        <Carousel className="projectCarousel col-12">
                             <Carousel.Item style={{borderRadius:'10px',}} >
                                 <img src={Travel1} alt="First slide" className="d-block w-100" 
                                 style={{borderRadius:'10px', filter:"blur(2px) brightness(0.5) grayscale(0%)" }}/>
@@ -72,7 +70,7 @@ function Project() {
                             </Carousel.Item>
                         </Carousel>
 
-                        <Carousel className="projectCarousel">
+                        <Carousel className="projectCarousel col-12">
                             <Carousel.Item style={{borderRadius:'10px'}}>
                                 <img src={Inventory1} alt="First slide" className="d-block w-100" 
                                 style={{borderRadius:'10px',filter:"blur(2px) brightness(0.5) grayscale(30%)"}}/>
@@ -102,6 +100,12 @@ function Project() {
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
+                    </div>
+                    <div>
+                        <br />
+                        <br />
+                        <br />
+                    
                     </div>
 
                 </div>

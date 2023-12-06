@@ -21,13 +21,15 @@ import Exper from "../images/experience.png";
 function Experience() {
     return (
         <>
-            <section id="experience">
-                <div className=" expdiv">
+            <section id="experience" className="experience">
+               
                     <div className="exptitle">
                         <h2>My Experience</h2>
                     </div>
+                    <div>
+                    &emsp;
+                </div>
                     <div className="expdivpart">
-
                         <div className="expSec">
                             <div className="card exppart" >
                                 <div className="col-4 col-6 col-12 expimgdiv" >
@@ -47,10 +49,15 @@ function Experience() {
                     </div>
 
 
+                    <div>
+                    &emsp;
                 </div>
-
-
-
+                <div>
+                    &emsp;
+                </div>
+                <div>
+                    &emsp;
+                </div>
 
             </section>
         </>

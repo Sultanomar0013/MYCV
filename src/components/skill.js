@@ -4,24 +4,7 @@ import $, { speed } from "jquery";
 import "tilt.js";
 import { motion, useAnimation } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
-import HTML from "../logoImages/html-5.png";
-import CSS from "../logoImages/css-3.png";
-import Bootstrap from "../logoImages/bootstrap.png";
-import Framer from "../logoImages/framer.png";
-import Reactimg from "../logoImages/react.png";
-import CPlus from "../logoImages/c-.png";
-import PHP from "../logoImages/php.png";
-import JS from "../logoImages/js.png";
-import Expressimg from "../logoImages/express.png";
-import Nodeimg from "../logoImages/node.png";
-import Mongoimg from "../logoImages/Mongodb.png";
-import Mysqlimg from "../logoImages/mySql.png";
-import Postman from "../logoImages/postman.png";
-import Github from "../logoImages/github.png";
-import Leetcode from "../logoImages/leetcode.png";
-import HackerRank from "../logoImages/Hackerrank.png";
-import Left from "../Animation/transitionleft"
-import Fade from "../Animation/fadescroll"
+import Card from 'react-bootstrap/Card';
 
 
 
@@ -38,112 +21,55 @@ import Scroll from "../Animation/scroll";
 function Skill() {
     return (
         <>
-            <section id="skill" className="">
-                <div className="skilldiv">
-                    <div className="skillstitle">
-                        <h1><Fade>Skills</Fade></h1>
+            <section id="skillsection" className="skillsection">
+                <div className="skilltitle">
+                    <h5>My Skills</h5>
+                </div>
+                <br />
+                <div className="skillmaindiv">
+                    <div className="subdiv Frontend">
+                        <p className="skilltitleall">Frontend</p>
+                        <div className="subskilltitle1div">
+                            <p className="subskilltitle1"> React</p>
+                            <p className="subskilltitle2"> Bootstrap</p>
+                        </div>
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'center', width: '80%' }}>
-                        <table className="table-responsive">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th></th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><h5><Left>Language :</Left></h5></td>
-                                    <td className="imgtd">
-                                        <Fade><img src={CPlus} className="img-fluid skillimage"/>
-                                        <img src={PHP} className="img-fluid skillimage"  />
-                                        <img src={JS} className="img-fluid skillimage" />
-                                        </Fade> 
-                                        
-                                    
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td><h5><Left>Front-End Desingn :</Left></h5></td>
-                                    <td className="imgtd">
-                                    <Fade>
-                                    <img src={HTML} className="img-fluid skillimage"  />
-                                    <img src={CSS} className="img-fluid skillimage"  />
-                                        <img src={Bootstrap} className="img-fluid skillimage"  />
-                                        <img src={Framer} className="img-fluid skillimage"  />
-                                        <img src={Reactimg} className="img-fluid skillimage"  />
-                                    </Fade>
-                                    
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-                                    <td><h5><Left>Back-End :</Left></h5></td>
-                                    <td className="imgtd">
-                                    <Fade>
-                                    <img src={Expressimg} className="img-fluid skillimage"  />
-                                    <img src={Nodeimg} className="img-fluid skillimage"  />
-                                        <img src={PHP} className="img-fluid skillimage" />
-                                    </Fade>
-                                        
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td><h5><Left>Database :</Left></h5></td>
-                                    
-                                    <td className="imgtd"> 
-                                    <Fade>
-                                    <img src={Mongoimg} className="img-fluid skillimage" />
-                                    <img src={Mysqlimg} className="img-fluid skillimage"  />
-                                    </Fade>
-                                        
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td><h5><Left>Version Control :</Left></h5></td>
-                                    
-                                    <td className="imgtd">
-                                    <Fade>
-                                    <img src={Github} className="img-fluid skillimage"  />
-                                    </Fade>
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td><h5><Left>Other Software :</Left></h5></td>
-                                
-                                    <td className="imgtd">
-                                    <Fade>
-                                    <img src={Postman} className="img-fluid skillimage"  />
-                                    </Fade>
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td><h5><Left>Other Skills</Left></h5></td>
-                                    
-                                    <td className="imgtd">
-                                    <Fade>
-                                    <img src={HackerRank} className="img-fluid skillimage" />
-                                    <img src={Leetcode} className="img-fluid skillimage"  />
-                                    </Fade>
-                                    
-                                    </td>
-
-                                </tr>
-
-                            </tbody>
-                        </table>
-
-
+                    <div className="subdiv Backend">
+                        <p className="skilltitleall">Backend</p>
+                        <div className="subskilltitle1div">
+                            <p className="subskilltitle1"> Node</p>
+                            <p className="subskilltitle2"> Express</p>
+                        </div>
                     </div>
-
+                    <div className="subdiv Database">
+                        <p className="skilltitleall">Database</p>
+                        <div className="subskilltitle1div">
+                            <p className="subskilltitle1"> MySQL</p>
+                            <p className="subskilltitle2"> Mongodb</p>
+                        </div>
+                    </div>
+                    <div className="subdiv VersionControl">
+                        <p className="skilltitleall1">Version Control</p>
+                        <div className="subskilltitle1div">
+                            <p className="subskilltitle1"> Github</p>
+                        </div>
+                    </div>
+                    <div className="subdiv OtherSoft">
+                        <p className="skilltitleall1">Other Software</p>
+                        <div className="subskilltitle1div">
+                            <p className="subskilltitle2"> Postman </p>
+                        </div>
+                    </div>
+                    <div className="subdiv devOPs">
+                        <p className="skilltitleall">Dev-Ops</p>
+                        <div className="subskilltitle1div">
+                            <p className="subskilltitle1">Docker</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div>
+                    &emsp;
                 </div>
             </section>
         </>

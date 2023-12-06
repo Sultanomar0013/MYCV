@@ -1,4 +1,4 @@
-/*About me section*/
+/*About me section
 .cobjectSection {
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@
 
 @media only screen and (max-width: 750px) {
 
-    /*About me section*/
+    /*About me section
     .cobjecttiltcard {
         width: 90%;
         height: 80%;
@@ -61,3 +61,4 @@
         font-size: 15px;
     }
 }
+*/

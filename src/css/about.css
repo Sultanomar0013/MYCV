@@ -1,63 +1,35 @@
-/*About me section*/
-.aboutmeSection {
-    display: flex;
+.aboutmeSection{
+    width:100%;
+    display: flex ;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    background: #2b323c;
+    color: #fff;
+}
+
+.tiltcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
 }
-
-.tiltcard {
+.aboutmediv{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 20rem;
     flex-direction: column;
-    width: 60%;
-    height: 60%;
-    border: 3px solid rgba(0, 0, 0, 0.18);
-    transform-style: preserve-3d;
-    perspective: 1000px;
+    align-items: center;
+    justify-content: center;
 }
-
-.aboutme {
-    transform: translateZ(40px);
-    -webkit-transform: translateZ(40px);
-    -moz-transform: translateZ(40px);
-    -ms-transform: translateZ(40px);
-    -o-transform: translateZ(40px);
-}
-
-.aboutmepara {
-    width: 50%;
-    transform: translateZ(40px);
-    -webkit-transform: translateZ(40px);
-    -moz-transform: translateZ(40px);
-    -ms-transform: translateZ(40px);
-    -o-transform: translateZ(40px);
-}
-
-.aboutmepara p {
+.aboutmepara{
     text-align: justify;
-    font-size: 15px;
 }
-
-@media only screen and (max-width: 750px) {
-
-    /*About me section*/
-    .tiltcard {
-        width: 90%;
-        height: 80%;
-    }
-
-    .aboutme {
-        font-size: 15px;
-    }
-
-    .aboutmepara {
-        width: 70%;
-    }
-
-    .aboutmepara p {
-        font-size: 15px;
-    }
+.Cobjectivediv{
+    display: flex;
+    width: 20rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cobjectpara{
+    text-align: justify;
 }

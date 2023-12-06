@@ -38,13 +38,13 @@ function Home() {
                 <div className=" textdiv ">
                     <div className="container content text-3d-shadow">
                         <Reveal>
-                            <h1 className="homeintro">
+                            <h4 className="homeintro">
                                 Hey There!!! My name is Omar Saleh Sultan,{" "}
                                 <span
                                     className="auto-type"
                                     style={{ color: "chocolate" }}
                                 ></span>
-                            </h1>
+                            </h4>
                         </Reveal>
                     </div>
 

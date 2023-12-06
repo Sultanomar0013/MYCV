@@ -32,21 +32,52 @@ function About() {
     return (
         <>
             <section id="about" className="aboutmeSection">
-                <div className="tiltcard" data-tilt>
-                    <div className="aboutme">
-                        <Left>
-                            <h6>About Me</h6>
-                        </Left>
+                <div className="abouttiltdiv">
+                    <div className="tiltcard" data-tilt>
+                        <div className="aboutmediv">
+                            <div className="aboutme">
+                                <Left>
+                                    <h6>About Me</h6>
+                                </Left>
+                            </div>
+                            <div className="aboutmepara">
+                                <Right>
+                                    <p>
+                                        I am like those people who is enthusiast in tech related things, interested in
+                                        learning new skills and find oppurtunaties to grab knowledge.
+                                    </p>
+                                </Right>
+                            </div>
+                        </div>
+
+                        <div className="Cobjectivediv">
+                            <div className="cobject">
+                                <Left>
+                                    <h6>Carear Objective</h6>
+                                </Left>
+                            </div>
+                            <div className="cobjectpara">
+                                <Right>
+                                    <p>
+                                        Passionate Computer Engineer driven to take complex challenges,
+                                        seeking roles for continuous learning and innovation, eager to contribute
+                                        to innovative projects.
+                                    </p>
+                                </Right>
+                            </div>
+                        </div>
+
                     </div>
-                    <div className="aboutmepara">
-                        <Right>
-                        <p>
-                            I am like those people who is enthusiast in tech related things, interested in 
-                            learning new skills and find oppurtunaties to grab knowledge.
-                        </p>
-                        </Right>
+                    <div>
+                        <br />
+                        <br />
+                        <br />
+                    
                     </div>
+
                 </div>
+
+
             </section>
         </>
     );

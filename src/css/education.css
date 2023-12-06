@@ -1,88 +1,25 @@
-/*Education section*/
-.education {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 120vh;
+.edusection{
+    height: auto;
     background: #2b323c;
-    color: #fff
+    color: #fff;
 }
-
-.edutitle {
-    margin-top: 8%;
-}
-
-.edumaindiv {
+.edumaindiv{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
-    width: 50%;
-    height: 100px;
-    margin-top: ;
-}
-
-.edusubdiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(181, 181, 181);
-    border-radius: 10px;
-    width: 15%;
-    height: 70%;
-}
-
-.eduhiddendiv {
-    width: 70%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-}
-
-.eduhidden {
     width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
 }
-
-.eduimg {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.eduimg {
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+.subedudiv{
+    width: 15rem;
+    height:16rem;
+    background: #64686e; 
+    color: white;
+    font-weight:bold;
 }
 
 @media only screen and (max-width: 750px) {
-
-    /*education section*/
-    .education {
-        justify-content: center;
-    }
-
-    .edumaindiv {
-        width: 100%;
-    }
-
-    .eduhiddendiv {
-        width: 90%;
-    }
-
-    .edusubdiv {
-        width: 20%;
-    }
-
-    .eduonclickhiddendiv {
-        height: 40%;
-    }
-
-    .eduimg {
-        border-bottom-left-radius: 0px;
-        border-top-right-radius: 20px;
+    .subedudiv{
+        width:10rem
     }
 }
